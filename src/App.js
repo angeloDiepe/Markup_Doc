@@ -15,7 +15,6 @@ class App extends Component{
 	  return (
 	    <div className="App">
 			  <Welcome loggingButton={this.props.loggingButton} handleLoggingButton={this.props.handleLoggingButton}/>
-			  {console.log(this.props.handleLoggingButton("true"), this.props.loggingButton)}
 			  </div>
 	  );
 	}

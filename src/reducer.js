@@ -5,9 +5,10 @@ const initialState={
 }
 
 export const handleLogging=(state=initialState,action={})=>{
+  
     switch (action.type) {
         case CHANGE_LOGGING_BUTTON:
-            return Object({},state,{loggingButton:action.payload});
+            return Object.assign({},state,{loggingButton:action.payload});
     
         default:
             return state;
