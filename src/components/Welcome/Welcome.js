@@ -5,8 +5,7 @@ const Welcome=(props)=>{
         <div id="welcome-wrapper">
            <div id="logo-text">
                 Markup-Doc
-{console.log(props.handleLoggingButton("true"),props.loggingButton)}           </div>
-           
+                       </div>
            <button className="login-button">Login</button>
         </div>
         )
