@@ -1,12 +1,13 @@
 import React from "react";
 import "./Welcome.css";
-const Welcome=()=>{
+const Welcome=(props)=>{
     return(
         <div id="welcome-wrapper">
            <div id="logo-text">
                 Markup-Doc
-           </div>
-           <button class="login-button">Login</button>
+{console.log(props.handleLoggingButton("true"),props.loggingButton)}           </div>
+           
+           <button className="login-button">Login</button>
         </div>
         )
 }
