@@ -1,12 +1,15 @@
-import React from 'react';
+import React,{Component} from 'react';
 import './App.css';
+import Welcome from "./components/Welcome/Welcome.js"
 
-function App() {
-  return (
-    <div className="App">
-      Markup doc
-    </div>
-  );
+class App extends Component{
+  
+  render(){
+	  return (
+	    <div className="App">
+	      <Welcome/>
+	    </div>
+	  );
+	}
 }
-
 export default App;
