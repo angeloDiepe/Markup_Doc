@@ -25,7 +25,7 @@ const Login =(props)=> {
                         <span>Password:</span>
                         <input type="password" className="input-login" />
                     </div>
-                        <button onClick={() => props.setLoggedIn(checkEntry(document.querySelector("#email-input").lastChild.value, document.querySelector("#password-input").lastChild.value))}>Login</button>
+                        <button onClick={() =>props.setLoggedIn(checkEntry(document.querySelector("#email-input").lastChild.value, document.querySelector("#password-input").lastChild.value).toString())}>Login</button>
                 </section>
                 <footer className="footer-login">
                             Not yet a member? <span onClick={() => props.handleSignupLoginButton('true')}>SignUp</span>
