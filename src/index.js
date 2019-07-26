@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
-import {createStore} from "redux"
-import {handleLogging} from "./reducer.js";
+import {createStore, combineReducers} from "redux"
+import {handleLogging, handleSearch} from "./reducer.js";
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const store=createStore(handleLogging)
+const rootReducer=combineReducers({handleLogging,handleSearch})
+const store=createStore(rootReducer)
 ReactDOM.render(
     <Provider store={store} >
         <App/>

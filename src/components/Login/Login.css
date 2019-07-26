@@ -76,9 +76,6 @@
     width:79%;
     background-color: #ffffff55;
 }
-.input-login:focus{
-    border-color: #5352ed;
-}
 .form-login>section>div{
     display: flex;
     width:80%;

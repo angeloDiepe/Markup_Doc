@@ -1,4 +1,4 @@
-import {CHANGE_LOGGING_BUTTON,CHANGE_SIGNUP_LOGIN,CHANGE_LOGGEDIN} from "./constants.js";
+import {CHANGE_LOGGING_BUTTON,CHANGE_SIGNUP_LOGIN,CHANGE_LOGGEDIN, CHANGE_SEARCH_FIELD} from "./constants.js";
 
 export const handleLoggingButton=(bool)=>({
     type:CHANGE_LOGGING_BUTTON,
@@ -13,4 +13,8 @@ export const handleSignupLoginButton = (bool) => ({
 export const setLoggedIn = (bool) => ({
     type: CHANGE_LOGGEDIN,
     payload: bool
+})
+export const setSearchField = (text) => ({
+    type: CHANGE_SEARCH_FIELD,
+    payload: text
 })

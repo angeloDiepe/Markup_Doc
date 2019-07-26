@@ -7,3 +7,6 @@
 	background-color:#011627;
   color:#ffffffCC;
 }
+input:focus{
+    border-color: #5352ed;
+}

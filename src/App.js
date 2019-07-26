@@ -2,21 +2,26 @@ import React,{Component} from 'react';
 import {connect} from "react-redux";
 import Welcome from "./components/Welcome/Welcome.js";
 import Login from "./components/Login/Login.js";
-import Nav from "./components/Nav/Nav.js"; 
 import Page from "./components/Page/Page.js";
+import Nav from "./components/Nav/Nav.js"; 
+import SearchBar from "./components/SearchBar/SearchBar.js"; 
+import CardList from "./components/CardList/CardList.js"; 
+import Footer from "./components/Footer/Footer.js"; 
 import Aux from "./containers/hoc/Aux.js";
 import './App.css';
-import {handleLoggingButton,handleSignupLoginButton,setLoggedIn} from "./actions.js"
+import {handleLoggingButton,handleSignupLoginButton,setLoggedIn,setSearchField} from "./actions.js"
 
 const mapStateToProps=state=>({
-	loggingButton:state.loggingButton,
-	isRegistering:state.isRegistering,
-	isLoggedIn:state.isLoggedIn
+	loggingButton:state.handleLogging.loggingButton,
+	isRegistering:state.handleLogging.isRegistering,
+	isLoggedIn:state.handleLogging.isLoggedIn,
+	searchField:state.handleSearch.searchField
 })
 const mapDispatchToProps=dispatch=>({
 	handleLoggingButton: (bool)=>dispatch(handleLoggingButton(bool)),
 	handleSignupLoginButton: (bool) => dispatch(handleSignupLoginButton(bool)),
-	setLoggedIn: (bool) => dispatch(setLoggedIn(bool))
+	setLoggedIn: (bool) => dispatch(setLoggedIn(bool)),
+	setSearchField: (text) => dispatch(setSearchField(text)),
 })
 class App extends Component{
   render(){
@@ -37,6 +42,9 @@ class App extends Component{
 			<Aux>
 				<Page>
 					<Nav setLoggedIn={this.props.setLoggedIn}/>
+					<SearchBar setSearchField={this.props.setSearchField} searchField={this.props.searchField}/>
+					<Footer/>
+					<CardList/>
 				</Page>	
 			</Aux>
 			}
