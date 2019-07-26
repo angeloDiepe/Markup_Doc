@@ -1,0 +1,39 @@
+.card-container{
+    background-color:#fffbff;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    padding:10px 20px;
+    text-align: justify;
+    border:1px solid #eee;
+    border-radius: 5.5px;
+    box-shadow:1px 8px 10px 1px rgba(0,0,0,0.08);
+    margin:25px auto;
+}
+.header-card{
+    color:#5352ed;
+    font-weight: 500;
+    font-size: 30px;
+}
+.sub-header-card{
+    font-size: 18px;
+    color:#000000bf;
+}
+.content-card{
+    font-size: 15px;
+    letter-spacing: 0.55px;
+    word-spacing: -0.5px;
+    position: relative;
+    top:-10px;
+}
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top:0px;
+    font-size: 15px;
+}
+.footer-card span{
+    color:#5352ed;
+    font-size: 14px;
+    font-family: "roboto mono"    
+}
