@@ -1,0 +1,19 @@
+#admin-manage-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+#admin-manage-wrapper>header{
+    width:100%;
+    background-color: rgba(0,0,0,0.875);
+    color:white;
+    height: 48px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+}

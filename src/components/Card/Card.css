@@ -1,13 +1,13 @@
 .card-container{
-    background-color:#fffbff;
+    background-color:#ffffff;
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
     height: auto;
     padding:10px 20px;
     text-align: justify;
-    border:1px solid #eee;
+    border:1.25px solid #eee;
     border-radius: 5.5px;
-    box-shadow:1px 8px 10px 1px rgba(0,0,0,0.08);
+    box-shadow:1px 8px 10px 1px rgba(0,0,0,0.125);
     margin:25px auto;
 }
 .header-card{
@@ -25,6 +25,7 @@
     word-spacing: -0.5px;
     position: relative;
     top:-10px;
+    padding:0 5px;
 }
 .footer-card{
     display: flex;
@@ -35,5 +36,14 @@
 .footer-card span{
     color:#5352ed;
     font-size: 14px;
-    font-family: "roboto mono"    
+    padding:0 3px;
+}
+@media only screen and (max-width:440px){
+    .card-container{
+        width:100%;
+        padding:0;
+        border:none;
+        border-top:1.25px solid #eee;
+        border-bottom:1.25px solid #eee;
+    }
 }

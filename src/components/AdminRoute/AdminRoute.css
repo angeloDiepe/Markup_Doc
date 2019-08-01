@@ -1,0 +1,47 @@
+#admin-route-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0);
+}
+#admin-route-container{
+    width: 60%;
+    height: 30%;
+    max-width: 450px;
+    min-height:200px;
+    max-height: 400px;
+    background-color: rgba(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 40%;
+    grid-row-gap: 5%;
+    z-index: 5;
+}
+#admin-route-container>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#admin-route-container>div>*{
+    font-size: 16px;
+    border:none;
+    border-radius: 2px;
+    height: 50px;
+    width: 100px;
+    margin-right: 7.5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+#admin-route-container>div>:first-child{
+    background-color:rgb(216, 24, 24);
+    color:rgb(255, 255, 255);
+}
+#admin-route-container>div>:last-child{
+    background-color:#5352ed;
+    color:white;
+}
+#admin-route-container>div>*:hover{
+    color:black;
+}

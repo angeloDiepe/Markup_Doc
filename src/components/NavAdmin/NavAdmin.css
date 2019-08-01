@@ -1,0 +1,32 @@
+#nav-admin{
+    background-color:rgba(0,0,0,0.95);
+    height: calc( 100vh - 48px );
+    position: fixed;
+    top:48px;
+    width:64px;
+    left:0;
+    padding:50px 0px;
+    margin:0;
+}
+#nav-admin>li{
+    list-style: none;
+    margin:40px 0;
+    width: 100%;
+    height: 64px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-admin>li>img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+#nav-admin>li>img:hover{
+   height: 47px;
+    width: 47px;  
+}
+.isNav{
+    background-color:#5352ed;
+}

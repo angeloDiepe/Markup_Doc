@@ -3,11 +3,20 @@ import Aux from "../../containers/hoc/Aux.js"
 import "./Login.css";
 const Login =(props)=> {
     const checkEntry=(email,pwd)=>{
-        if(email==="angelodiepe10@yahoo.com" && pwd==="Angelo2001"){
+        if(email==="angelonormal@yahoo.com" && pwd==="Angelo2001"){
             alert("Valid Credentials");
+            props.setRole("normal");
+            return true;
+        } else if (email === "angelosuperuser@yahoo.com" && pwd === "Angelo2001"){
+            alert('superuser');
+            props.setRole("superuser");
+            return true;
+        } else if (email === "angeloadmin@yahoo.com" && pwd === "Angelo2001") {
+            alert('admin!');
+            props.setRole("admin");
             return true;
         }else{
-            alert('Wrong Credentials');
+            alert('Wrong Credentials!');
             return false;
         }
     }

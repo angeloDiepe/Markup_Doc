@@ -5,7 +5,7 @@
     position: fixed;
     top:65.9px;
     z-index: 2;
-    box-shadow: 0px 7px 20px 1px rgba(0,0,0,0.075);
+    box-shadow: 0px 7px 20px 1px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,4 +44,9 @@
     border-radius: 25px;
     font-style: normal;
     outline: none;
+}
+@media only screen and (min-width:1050px){
+   #searchbar-input{
+        padding-left:8.5%;
+    }
 }

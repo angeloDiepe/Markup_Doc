@@ -1,0 +1,175 @@
+#add-box{
+    width:75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:60px;
+    right: 60px;
+    background-color: #5352ed;
+    z-index: 5;
+    color:white;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    animation:bounce 2s linear infinite;
+    transform-origin: center bottom;
+}
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+            transform: translate3d(0,-4px,0);
+  }
+}
+#add-box:hover{
+      background-color: #5352edf0;
+      font-weight: bold;
+      color:black;
+}
+#add-content-wrapper{
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 4;
+    background-color:rgba(255, 255, 255, 0.6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-content-container{
+    width:80%;
+    max-width: 900px;
+    max-height: 1000px;
+    height: 70%;
+    background-color:white;
+    border:1.5px solid #5352ed;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows:10% 7.5% 7.5% 7.5% 45% 5%;
+    grid-row-gap: 2%;
+    justify-content: center;
+}
+#desc-add{
+    width: 100%;
+    background-color:#5352ed;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#select{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#select>select{
+    background-color:white;
+    width: 80%;
+    height: 60%;
+    border:1px solid #5352ed88;
+    color:rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+#add-content-container label{
+    width: 20%;
+    text-align: left;
+}
+#title{
+  width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#add-content-container input{
+    width: 80%;
+    height: 60%;
+    border:1.5px solid #5352ed22;
+    color:rgba(0, 0, 0, 0.75);
+    padding-left: 10px;
+}
+#subtitle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+#content>textarea{
+    height: 90%;
+    width: 80%;
+    border:1.5px solid #5352ed22;
+    color:rgba(0, 0, 0, 0.75);
+    padding-left: 10px;
+}
+#author-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-30px;
+}
+#author,#date{
+    width: 50%;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 7px;
+}
+#author-date input{
+    width: 50%;
+    height: 55%;
+}
+#submit{
+    height: 40px !important;
+    width:100px  !important;
+    margin:auto;
+    position: relative;
+    top:-12px;
+    border:1.5px solid #5352ed !important;
+    border-radius: 5px;
+    text-align: center !important;
+    color:#5352ed !important;
+    background-color: transparent;
+    font-weight: bold;
+    padding:0 !important;
+    transition: all 0.2s linear;
+}
+#submit:hover{
+    background-color: #5352ed;
+    color:white !important;
+    border:none !important;
+}

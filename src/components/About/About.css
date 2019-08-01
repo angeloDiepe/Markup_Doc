@@ -1,0 +1,43 @@
+#about-container{
+    margin:auto;
+    position: relative;
+    top:15%;
+    width: 90%;
+    height: auto;
+    min-height:600px;
+    max-width: 900px;
+    border:1.5px solid #5352ed;
+    border-radius: 7.5px;
+    background-color:white;
+    margin-bottom:50px;
+    padding:0px 0px 30px 0;
+    display:flex;
+    flex-direction:column;
+}
+#header-about{
+    width: 100%;
+    height: 50px;
+    background-color:#5352ed;
+    border-radius: 5px 5px 0 0;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    letter-spacing: 2.5px;
+    margin-bottom:30px;
+}
+#section-about{
+    width: 75%;
+    height: 90%;
+    margin: 20px auto 0 auto;
+    text-align: justify;
+    font-size: 15px;
+    position:relative;
+    top:-15px;
+}
+#markup-doc-about{
+    font-weight:bolder;
+    font-size:16px;
+    padding:0px 5px 0px 0px;
+}

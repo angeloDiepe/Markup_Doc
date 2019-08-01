@@ -12,7 +12,7 @@
 #nav-text-logo{
     color:#5352ed;
     font-size: 24px;
-    width: 35%;
+    padding-left:30px;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -36,4 +36,99 @@
     font-weight: bold;
     color:black; 
     font-size: 18px;
+}
+#nav-icon-container{
+	padding-top: 5px;
+	height: 40px;
+	width: 50px;
+    cursor: pointer;
+    z-index:5;
+    display:none;
+}
+.topNav{
+	opacity: 0;
+	width: 48px;
+	height: 5px;
+	background-color: white;
+	display: block;
+	margin:5px 0px;
+	transition:all 0.4s linear;
+	border-radius: 3px;
+}
+.span0{
+	opacity: 1;
+	width: 48px;
+	height: 5px;
+	background-color: #5352ed;
+	display: block;
+	margin:5px 0px;
+	transition:all 0.4s linear;
+	border-radius: 3px;
+}
+.span1{
+	width: 48px;
+	height: 5px;
+	background-color: #5352ed;
+	display: block;
+	margin:5px 0px;
+	transition:all 0.4s linear;
+	border-radius: 3px;
+	transform: rotate(45deg) translate(1px ,5px);
+	border-radius: 5px;
+}
+.span2{
+	width: 48px;
+	height: 5px;
+	background-color: #5352ed;
+	display: block;
+	margin:5px 0px;
+	transition:all 0.4s linear;
+	border-radius: 3px;
+	transform: rotate(-45deg) translate(2px ,-6px);
+	border-radius: 5px;
+}
+.navOn{
+	width: 48px;
+	height: 5px;
+	background-color: #5352ed;;
+	display: block;
+	margin:8.5px 0px;
+	transition:all 0.4s linear;
+	border-radius: 3px;
+	transform: none;
+}
+@media only screen and (max-width:600px){
+        #nav-icon-container{
+            display:block;
+        }
+        #nav-items{
+            display: flex;
+            align-items: center;
+            position:absolute;
+            background-color:white;
+            flex-direction:column;
+            top:50px;
+            width:100%;
+            height:auto;
+            padding:0px;
+            box-shadow:0 5px 5px 5px rgba(0,0,0,0.2);
+            z-index:2;
+            transition: all 0.5s linear;
+        }
+        .isBlock{
+            transition: all 0.5s linear;
+            transform-origin: top;
+            transform:rotateX(90deg);
+            margin-top:-10px;
+            opacity:0.2;
+        }
+        #nav-items>li{
+            height:48px;
+            align-items:center;
+            border-top:1px solid #00000022;
+            width:100%;
+            display:flex;
+            justify-content:center;
+            font-weight:400;
+        }
 }

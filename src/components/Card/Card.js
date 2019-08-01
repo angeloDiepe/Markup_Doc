@@ -17,8 +17,8 @@ const Card=()=>{
                 Exercitationem eum officia enim voluptatem et ex ea!
             </section>
             <footer className="footer-card">
-                <div className="author-wrapper">By <span>HERMANN</span></div>
-                <div className="date-wrapper">Date: <span >17-05-19</span></div>
+                <div className="author-wrapper">By<span>HERMANN</span></div>
+                <div className="date-wrapper">Date:<span >17-05-19</span></div>
             </footer>
         </div>
     )
