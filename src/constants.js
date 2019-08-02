@@ -8,3 +8,4 @@
  export const CHANGE_IS_ADDING = "CHANGE_IS_ADDING";
  export const ADDED_CONTENT = "ADDED_CONTENT";
  export const CHANGE_ADMIN_ROUTE="CHANGE_ADMIN_ROUTE";
+ export const CHANGE_USER = "CHANGE_USER"; 

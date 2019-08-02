@@ -1,4 +1,4 @@
-import {CHANGE_LOGGING_BUTTON,CHANGE_SIGNUP_LOGIN,CHANGE_LOGGEDIN, CHANGE_SEARCH_FIELD, CHANGE_NAV, CHANGE_TAB, CHANGE_ROLE, CHANGE_IS_ADDING, ADDED_CONTENT, CHANGE_ADMIN_ROUTE} from "./constants.js";
+import {CHANGE_LOGGING_BUTTON,CHANGE_SIGNUP_LOGIN,CHANGE_LOGGEDIN, CHANGE_SEARCH_FIELD, CHANGE_NAV, CHANGE_TAB, CHANGE_ROLE, CHANGE_IS_ADDING, ADDED_CONTENT, CHANGE_ADMIN_ROUTE, CHANGE_USER} from "./constants.js";
 
 export const handleLoggingButton=(bool)=>({
     type:CHANGE_LOGGING_BUTTON,
@@ -41,4 +41,8 @@ export const onAddingContent = (bool) => ({
 export const setAdminRoute = (text) => ({
     type: CHANGE_ADMIN_ROUTE,
     payload: text
+})
+export const loadUser = (user) => ({
+    type: CHANGE_USER,
+    payload: user
 })
