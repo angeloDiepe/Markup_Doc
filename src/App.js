@@ -79,9 +79,7 @@ class App extends Component{
 					{(this.props.routeAdmin.length===0)?
 						<Aux>
 							<AdminRoute setAdminRoute={this.props.setAdminRoute}/>
-							<Particles className='particles'
-							params={particlesOptions}
-							/>
+						
 						</Aux>
 						
 						:null}
