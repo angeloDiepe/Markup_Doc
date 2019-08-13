@@ -18,7 +18,17 @@ import './App.css';
 import {handleLoggingButton,handleSignupLoginButton,setLoggedIn,setSearchField,setNav,setTab,setRole,handleAdding,onAddingContent,setAdminRoute,loadUser} from "./actions.js"
 
 import Particles from 'react-particles-js';
-
+const particlesOptions = {
+	particles: {
+		number: {
+			value: 85,
+			density: {
+				enable: true,
+				value_area:2000
+			}
+		}
+	}
+}
 		
 const mapStateToProps=state=>({
 	loggingButton:state.handleLogging.loggingButton,
@@ -79,7 +89,9 @@ class App extends Component{
 					{(this.props.routeAdmin.length===0)?
 						<Aux>
 							<AdminRoute setAdminRoute={this.props.setAdminRoute}/>
-						
+							<Particles className='particles'
+							params={particlesOptions}
+							/>
 						</Aux>
 						
 						:null}
