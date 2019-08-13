@@ -1,0 +1,186 @@
+@keyframes head{
+0%{
+    font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Developpement Web";
+  }
+  4%{
+      font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Developpement Web";
+  }
+  8%{
+      font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Developpement Web";
+  }
+  10%{
+      font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Developpement Web";
+  }
+  14%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Marketing Digital";
+  }
+  18%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Marketing Digital";
+  }
+  22%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Marketing Digital";
+  }
+  24%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Marketing Digital";
+  }
+  28%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Conception et Impression";
+  }
+  32%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Conception et Impression";
+  }
+  36%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Conception et Impression";
+  }
+  38%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Conception et Impression";
+  }
+  42%{
+       font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Formation";
+  }
+  46%{
+       font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Formation";
+  }
+  50%{
+       font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Formation";
+  }
+  52%{
+       font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Formation";
+  }
+  54%{
+       font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Formation";
+  }
+  58%{
+       font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Formation";
+  }
+  62%{
+       font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Formation";
+  }
+  66%{
+       font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Formation";
+  }
+  68%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Conception et Impression";
+  }
+  72%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Conception et Impression";
+  }
+  76%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Conception et Impression";
+  }
+  80%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Conception et Impression";
+  }
+  82%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Marketing Digital";
+  }
+  86%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Marketing Digital";
+  }
+  90%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Marketing Digital";
+  }
+  94%{
+     font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Marketing Digital";
+  }
+  96%{
+      font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Developpement Web";
+  }
+  100%{
+      font-size:3vw;
+    text-shadow: 0px 0px 20px #039be5 ;
+    content: "Developpement Web";
+  }
+ 
+
+}
+
+.cover-heading::before{
+  font-size: 76px;
+  content: "Developpement Web";
+  animation: 40s head infinite;
+}
+.commander{
+  background-color: #17A2B8;;
+  border:none;
+  height: 50px;
+  width: 150px;
+  z-index: 5;
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin:auto;
+  cursor: pointer;
+  padding:0px;
+}
+#commander1{
+  background-color: #f9a825;
+  } 
+#commander2{
+ background-color: #039be5; 
+  }
+#commander3{
+  background-color: #e53935; 
+  }
+#commander4{
+  background-color:  #43a047 ;
+  }

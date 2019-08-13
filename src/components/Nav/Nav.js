@@ -17,7 +17,7 @@ const Nav=(props)=>{
             <span id="nav-text-logo">Markup-Doc</span>
            <div onClick={displayNav} id="nav-icon-container">{navIcon()}</div>
             <ul id="nav-items" className="isBlock">
-                <li onClick={() => props.setNav('home')}>Home</li>
+                <li onClick={() => {props.setNav('home');props.setTab('WEB MARKUP')}}>Home</li>
                 <li onClick={() => props.setNav('recent')}>Recent</li>
                 <li onClick={() => props.setNav('about')}>About-us</li>
                 <li onClick={()=>props.setLoggedIn('false')}>Logout</li>

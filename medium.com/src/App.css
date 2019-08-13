@@ -1,0 +1,232 @@
+.App {
+  text-align: center;
+  height:100%;
+  width: 100%;
+  min-height: 900px;
+  overflow: hidden;
+
+}
+#slider-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 900px;
+}
+#web,#image-container{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  z-index:-2;
+    min-height: 900px;
+}
+#background-dark
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.35);
+  z-index:-1;
+    min-height: 900px;
+
+}
+#welcome{
+  color: white;
+  font-size:50px;
+  font-weight: bold;
+  width: 55%;
+  min-width: 500px;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  top: 2%;
+}
+#presentation{
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  width: 50%;
+  height: 120px;
+  margin:auto;
+  position: relative;
+  top: 50%;
+  z-index: 5;
+/*  word-wrap: break-word;*/
+}
+#menu{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: auto;
+  margin: auto;
+  position: relative;
+  top:10%;
+}
+#menu>div{
+  position: relative;
+  width: 250px;
+  height: 64px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 25% 60%;
+  grid-column-gap: 15%;
+  border-radius: 5px;
+  margin: 2.5px 0px;
+  padding-left: 15px;
+  padding-right: 10px;
+  align-items: center;
+  color: white; 
+  margin-right: -8px;
+}
+.hover-on{
+  transition: all 2s;
+  position: relative;
+  left: 202px;
+}
+#menu>div>a{
+  text-decoration: none;
+  color: white;
+  text-align: right;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#menu>div>img{
+  height: 36px;
+  width: 36px;
+  align-self:center;
+}
+#enterpriseSlide:hover,#contactSlide:hover,#homeSlide:hover,#newsletterSlide:hover{
+  background-color: #17A2B8;
+}
+#newsletterSlide{
+  background-color: #f9a825;
+}
+#newsletterSlide>img,#homeSlide>img{
+  margin-left: 0px;
+}
+#contactSlide{
+  background-color: #ef5350;
+}
+#homeSlide{
+  background-color: #212121;
+}
+#enterpriseSlide{
+  background-color: #6a1b9a;
+}
+#services{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  bottom:-25%;
+  height: auto;
+  padding:0px;
+}
+#services>li{
+  font-family: archivo;
+  font-size:1.2em;
+  list-style: none;
+  color: white;
+  width: 200px;
+}
+#service1{
+  font-weight: bolder;
+  font-size: 1.4em;
+  color:  #039be5;  
+}
+#service2{
+
+  font-weight: bolder;
+  font-size: 1.4em;
+  color:#e53935;
+}
+
+#service3{
+  font-weight: bolder;
+  font-size: 1.4em;
+  color: #f9a825; 
+}
+#service4{
+
+  font-weight: bolder;
+  font-size: 1.4em;
+  color: #43a047 ;  
+}
+
+#service5{
+  font-weight: bolder;
+  font-size: 1.4em;
+  color:  #263238;
+}
+@keyframes timeout{
+  0%{
+    transform: translateX(-100%);
+    background: orange;
+  }
+  10%{
+    transform: translateX(-80%);
+    background: white;
+  }
+  20%{
+    transform: translateX(-60%);
+    background: black;
+  }
+  30%{
+    transform: translateX(-40%);
+    background: orange;
+  }
+  40%{
+    transform: translateX(-20%);
+    background: green;
+  }
+  50%{
+    transform: translateX(0%);
+    background: grey;
+  }
+  60%{
+    transform: translateX(-20%);
+    background: indigo;
+  }
+  70%{
+    transform: translateX(-40%);
+    background: orange;
+  }
+  80%{
+    transform: translateX(-60%);
+    background: blue;
+  }
+  90%{
+    transform: translateX(-80%);
+    background: yellow;
+  }
+  100%{
+    transform: translateX(-100%);
+    background: #17a2b8;
+  }
+}
+
+.pag{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.5);
+}
+
+.pag .times{
+  width: 100%;
+  height: 100%;
+  background: orange;
+  transform: translateX(-100%);
+  animation: 40s timeout infinite;
+}

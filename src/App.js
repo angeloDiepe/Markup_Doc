@@ -57,11 +57,6 @@ const mapDispatchToProps=dispatch=>({
 	loadUser:(user)=>dispatch(loadUser(user)),
 })
 class App extends Component{
-
-	componentDidMount(){
-		console.log('test')
-	}
-
 	render(){
 		return (
 			<div className="App">
@@ -109,7 +104,7 @@ class App extends Component{
 				}
 						{((this.props.routeAdmin !== "manage" && this.props.routeAdmin.length !== 0 )|| this.props.role === "normal" || this.props.role === "superuser" )?
 					<Page>
-						<Nav setLoggedIn={this.props.setLoggedIn} setNav={this.props.setNav} />
+								<Nav setLoggedIn={this.props.setLoggedIn} setNav={this.props.setNav} setTab={this.props.setTab}/>
 						{(this.props.navigation==="about")?
 							<Aux>
 								<About/>
@@ -120,10 +115,10 @@ class App extends Component{
 								<SearchBar setSearchField={this.props.setSearchField} searchField={this.props.searchField}/>
 								<Tabs setTab={this.props.setTab} tab={this.props.tab}/>
 								{(this.props.role==="superuser" || this.props.role==="admin")?
-									<Add handleAdding={this.props.handleAdding} isAdding={this.props.isAdding}/>
+									<Add handleAdding={this.props.handleAdding} isAdding={this.props.isAdding} email={this.props.loadedUser.email}/>
 									:null
 								}
-								<CardList />
+								<CardList/>
 								<Footer />	
 							</Aux>
 						}

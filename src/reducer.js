@@ -1,4 +1,4 @@
-import { CHANGE_LOGGING_BUTTON, CHANGE_SIGNUP_LOGIN, CHANGE_LOGGEDIN, CHANGE_SEARCH_FIELD, CHANGE_NAV, CHANGE_TAB, CHANGE_ROLE, CHANGE_IS_ADDING, ADDED_CONTENT, CHANGE_ADMIN_ROUTE, CHANGE_USER} from "./constants.js";
+import { CHANGE_LOGGING_BUTTON, CHANGE_SIGNUP_LOGIN, CHANGE_LOGGEDIN, CHANGE_SEARCH_FIELD, CHANGE_NAV, CHANGE_TAB, CHANGE_ROLE, CHANGE_IS_ADDING, ADDED_CONTENT, CHANGE_ADMIN_ROUTE, CHANGE_USER, CHANGE_QNA} from "./constants.js";
 
 const initialState={
     loggingButton:"false",
@@ -6,12 +6,19 @@ const initialState={
     isLoggedIn:"false",
     navigation:"home",
     searchField:"",
-    tab:"web",
-    role:"normal",
+    tab:"WEB MARKUP",
+    role:"superuser",
     isAdding:false,
     isAddingContent:"false",
     routeAdmin:"",
-    loadedUser:{}
+    loadedUser:{
+        email: "angelodiepe10@yahoo.com",
+        id: 2,
+        joined: "2019-08-01T20:53:02.984Z",
+        name: "angelo diepe",
+        role: "admin"
+    },
+    qna:[]
 }
 
 export const handleLogging=(state=initialState,action={})=>{
@@ -31,7 +38,7 @@ export const handleLogging=(state=initialState,action={})=>{
                     navigation:"home",
                     searchField:"",
                     isRegistering:"false",
-                    tab: "web",
+                    tab: "WEB MARKUP",
                     role: "normal",
                     isAdding:false,
                     isAddingContent:"false",
@@ -55,6 +62,8 @@ export const handleLogging=(state=initialState,action={})=>{
             return Object.assign({}, state, { routeAdmin: action.payload });
         case CHANGE_USER:
             return Object.assign({}, state, { loadedUser: action.payload });
+        case CHANGE_QNA:
+            return Object.assign({}, state, { qna: action.payload });
          default:
             return state;
     }

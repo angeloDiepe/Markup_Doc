@@ -1,8 +1,42 @@
 #cardlist-container{
-    height: auto;
+    height: calc( 100% - 291px );
     width: 100%;
     z-index: 1;
     position: relative;
-    top:185px;
+    top:191px;
     padding-bottom:100px;
+}
+#loading2{
+animation: bounce 1s 1.65s infinite ease-in-out ;
+height: 30px;
+width:30px;
+border-radius: 50%;
+display: block;
+margin:0px 20px;
+background-color: #5352ed;
+}
+#loading1{
+animation: bounce 1s 0.5s infinite ease-in-out ;
+height: 30px;
+width:30px;
+border-radius: 50%;
+display: block;
+margin:0px 20px;
+background-color: #5352ed;
+}
+#loading0{
+animation: bounce 1s 0.25s infinite ease-in-out ;
+height: 30px;
+width:30px;
+border-radius: 50%;
+display: block;
+margin:0px 20px;
+background-color: #5352ed;
+}
+#loading-container{
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    width:100%;
 }
